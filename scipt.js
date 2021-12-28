@@ -149,7 +149,7 @@ recognition.onresult = function (event) {
         console.log("hai bhai isme");
         makeEmboss();
     }
-    else if (lowercommand.includes("sharp") || lowercommand.includes("better")) {
+    else if (lowercommand.includes("sharp") || lowercommand.includes("better") || lowercommand.includes("sharpness")) {
         console.log("hai bhai isme");
         makeSharp();
     }
