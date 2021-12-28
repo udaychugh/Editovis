@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background: #222831;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #222831;
+    padding: 5px;
+    color: #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+}
+
+.navbar .navmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.commands-section {
+    padding: 10px;
+}
+
+.navbar .navmenu img {
+    width: 150px;
+}
+
+.navbar .navmenu i {
+    font-size: 24px;
+    padding: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.navbar .navmenu i:hover {
+    background-color: #7bb1fd;
+    border-radius: 10px;
+}
+
+.navbar .navmenu h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.showmenu {
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    width: 0px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+
+}
+
+.showmenu .topbox {
+    background-color: #6998da;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f3f3f3;
+
+}
+
+.showmenu .topbox img {
+    width: 120px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.showmenu .crossmenu {
+    font-size: 42px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    text-decoration: none;
+    color: #f3f3f3;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.showmenu .crossmenu:hover {
+    color: #c30202;
+}
+
+.showmenu .menuitems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.showmenu .menuitems a {
+    padding: 15px;
+    color: #062c3f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.showmenu .menuitems a:hover {
+    color: #c30202;
+    background-color: #f6f6f6;
+}
+
+.img-conatiner {}
+
+.image {
+    max-width: 500px;
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.file-upload-section {
+    margin: auto;
+    margin-top: 0;
+    font-weight: bold;
+    width: 50%;
+    padding: 4px;
+    color: white;
+    text-align: center;
+    color: #222831;
+    background: #00FFF5;
+    cursor: pointer;
+}
+
+#foto-file {
+    display: none;
+}
+
+.upper-buttons-section {
+    display: flex;
+    top: 32%;
+    width: 50%;
+    margin: auto;
+}
+
+#rotate-range {
+    width: 100px;
+    float: right;
+}
+
+.buttons-section {
+    position: fixed;
+    margin: auto;
+    top: 67%;
+    left: 25%;
+    color: white;
+    width: 50%;
+}
+
+.buttons-table {
+    width: 100%;
+}
+
+.buttons-table td {
+    padding: 3px;
+    text-align: center;
+}
+
+.operation-btn {
+    padding: 8px;
+    border: 0;
+    background: #393E46;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bolder;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+
+}
+
+.download-btn {
+    background: #00FFF5;
+    color: #222831;
+}
+
+#color-picker,
+#colorize-color-picker {
+    display: none;
+}
+
+#color-preview {
+    float: left;
+    width: 15px;
+    height: 15px;
+}
+
+.showingpopup {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 9999;
+    
+}
+
+.alert {
+    padding: 20px;
+    background-color: #00FFF5;
+    color: #222831;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+    
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow-y: hidden;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
